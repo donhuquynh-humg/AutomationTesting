@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+   <test name="Test1" group-by-instances="true" preserve-order="true">
+    <parameter name = "browser" value = "Chrome"/>  
+    <classes>
+       <class name = "TestSuite.EnterPlan"/>
+        <class name = "TestSuite.Login"/> 
+    <!--     <class name = "TestSuite.EnterPlan"/>  -->
+   <class name = "TestSuite.Logout"/>  
+    </classes>
+  </test> <!-- Test -->
+ 
+</suite> <!-- Suite -->

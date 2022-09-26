@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestSuite.EnterPlan">
+        <methods>
+          <include name="MODULE2_08"/>
+          <include name="MODULE2_09"/>
+          <include name="tearDownMethod"/>
+          <include name="MODULE2_30"/>
+          <include name="beforeClass"/>
+          <include name="MODULE2_16"/>
+          <include name="MODULE2_27"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="MODULE2_11"/>
+          <include name="MODULE2_33"/>
+          <include name="MODULE2_35"/>
+          <include name="setUpMethod"/>
+          <include name="MODULE2_34"/>
+          <include name="MODULE2_15"/>
+          <include name="MODULE2_14"/>
+          <include name="MODULE2_36"/>
+          <include name="MODULE2_17"/>
+          <include name="MODULE2_28"/>
+        </methods>
+      </class> <!-- TestSuite.EnterPlan -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

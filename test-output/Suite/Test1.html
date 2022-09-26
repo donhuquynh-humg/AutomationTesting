@@ -1,0 +1,820 @@
+<html>
+<head>
+<title>TestNG:  Test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>33/14/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Sep 20 01:54:08 ICT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>573 seconds (573450 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_08()'><b>MODULE2_08</b><br>Test class: TestSuite.EnterPlan</td>
+<td><div><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép nhỏ hơn giá trị nhỏ nhất&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_08(EnterPlan.java:71)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1604111628", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1604111628'><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép nhỏ hơn giá trị nhỏ nhất&apos;)] doesn&apos;t exist
+	at org.testng.Assert.fail(Assert.java:97)
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_08(EnterPlan.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_09()'><b>MODULE2_09</b><br>Test class: TestSuite.EnterPlan</td>
+<td><div><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép lớn hơn giá trị lớn nhất&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_09(EnterPlan.java:76)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace322033405", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace322033405'><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép lớn hơn giá trị lớn nhất&apos;)] doesn&apos;t exist
+	at org.testng.Assert.fail(Assert.java:97)
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_09(EnterPlan.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_11()'><b>MODULE2_11</b><br>Test class: TestSuite.EnterPlan</td>
+<td><div><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày kết thúc không được trước ngày bắt đầu&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkMultiDate(EnterPlanScreen.java:145)
+	at TestSuite.EnterPlan.MODULE2_11(EnterPlan.java:86)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1978943199", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1978943199'><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày kết thúc không được trước ngày bắt đầu&apos;)] doesn&apos;t exist
+	at org.testng.Assert.fail(Assert.java:97)
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkMultiDate(EnterPlanScreen.java:145)
+	at TestSuite.EnterPlan.MODULE2_11(EnterPlan.java:86)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_14()'><b>MODULE2_14</b><br>Test class: TestSuite.EnterPlan</td>
+<td><div><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép nhỏ hơn giá trị nhỏ nhất&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_14(EnterPlan.java:101)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1803955991", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1803955991'><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép nhỏ hơn giá trị nhỏ nhất&apos;)] doesn&apos;t exist
+	at org.testng.Assert.fail(Assert.java:97)
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_14(EnterPlan.java:101)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_15()'><b>MODULE2_15</b><br>Test class: TestSuite.EnterPlan</td>
+<td><div><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép lớn hơn giá trị lớn nhất&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_15(EnterPlan.java:106)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace679690239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace679690239'><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép lớn hơn giá trị lớn nhất&apos;)] doesn&apos;t exist
+	at org.testng.Assert.fail(Assert.java:97)
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_15(EnterPlan.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_16()'><b>MODULE2_16</b><br>Test class: TestSuite.EnterPlan</td>
+<td><div><pre>java.lang.AssertionError: By.xpath: //div[@class=&apos;Toastify&apos;]//div//div//divis not visible did not expect to find [true] but found [false]
+	at Common.Utilities.assertTextValueVisible(Utilities.java:703)
+	at CommonScreen.EnterPlanScreen.savePlan(EnterPlanScreen.java:111)
+	at TestSuite.EnterPlan.MODULE2_16(EnterPlan.java:111)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1281521013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1281521013'><pre>java.lang.AssertionError: By.xpath: //div[@class=&apos;Toastify&apos;]//div//div//divis not visible did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:751)
+	at Common.Utilities.assertTextValueVisible(Utilities.java:703)
+	at CommonScreen.EnterPlanScreen.savePlan(EnterPlanScreen.java:111)
+	at TestSuite.EnterPlan.MODULE2_16(EnterPlan.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_17()'><b>MODULE2_17</b><br>Test class: TestSuite.EnterPlan</td>
+<td><div><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày kết thúc không được trước ngày bắt đầu&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkMultiDate(EnterPlanScreen.java:145)
+	at TestSuite.EnterPlan.MODULE2_17(EnterPlan.java:116)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1954526385", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1954526385'><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày kết thúc không được trước ngày bắt đầu&apos;)] doesn&apos;t exist
+	at org.testng.Assert.fail(Assert.java:97)
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkMultiDate(EnterPlanScreen.java:145)
+	at TestSuite.EnterPlan.MODULE2_17(EnterPlan.java:116)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_27()'><b>MODULE2_27</b><br>Test class: TestSuite.EnterPlan</td>
+<td><div><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép nhỏ hơn giá trị nhỏ nhất&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_27(EnterPlan.java:169)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace434672008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace434672008'><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép nhỏ hơn giá trị nhỏ nhất&apos;)] doesn&apos;t exist
+	at org.testng.Assert.fail(Assert.java:97)
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_27(EnterPlan.java:169)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_28()'><b>MODULE2_28</b><br>Test class: TestSuite.EnterPlan</td>
+<td><div><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép lớn hơn giá trị lớn nhất&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_28(EnterPlan.java:174)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1292050232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1292050232'><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép lớn hơn giá trị lớn nhất&apos;)] doesn&apos;t exist
+	at org.testng.Assert.fail(Assert.java:97)
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_28(EnterPlan.java:174)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_30()'><b>MODULE2_30</b><br>Test class: TestSuite.EnterPlan</td>
+<td><div><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày kết thúc không được trước ngày bắt đầu&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkMultiDate(EnterPlanScreen.java:145)
+	at TestSuite.EnterPlan.MODULE2_30(EnterPlan.java:184)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace486097674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace486097674'><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày kết thúc không được trước ngày bắt đầu&apos;)] doesn&apos;t exist
+	at org.testng.Assert.fail(Assert.java:97)
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkMultiDate(EnterPlanScreen.java:145)
+	at TestSuite.EnterPlan.MODULE2_30(EnterPlan.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_33()'><b>MODULE2_33</b><br>Test class: TestSuite.EnterPlan</td>
+<td><div><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép nhỏ hơn giá trị nhỏ nhất&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_33(EnterPlan.java:199)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1082232002", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1082232002'><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép nhỏ hơn giá trị nhỏ nhất&apos;)] doesn&apos;t exist
+	at org.testng.Assert.fail(Assert.java:97)
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_33(EnterPlan.java:199)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_34()'><b>MODULE2_34</b><br>Test class: TestSuite.EnterPlan</td>
+<td><div><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép lớn hơn giá trị lớn nhất&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_34(EnterPlan.java:204)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1179581828", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1179581828'><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép lớn hơn giá trị lớn nhất&apos;)] doesn&apos;t exist
+	at org.testng.Assert.fail(Assert.java:97)
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_34(EnterPlan.java:204)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_35()'><b>MODULE2_35</b><br>Test class: TestSuite.EnterPlan</td>
+<td><div><pre>java.lang.AssertionError: By.xpath: //div[@class=&apos;Toastify&apos;]//div//div//divis not visible did not expect to find [true] but found [false]
+	at Common.Utilities.assertTextValueVisible(Utilities.java:703)
+	at CommonScreen.EnterPlanScreen.draftSavePlan(EnterPlanScreen.java:118)
+	at TestSuite.EnterPlan.MODULE2_35(EnterPlan.java:209)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1147014249", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1147014249'><pre>java.lang.AssertionError: By.xpath: //div[@class=&apos;Toastify&apos;]//div//div//divis not visible did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:751)
+	at Common.Utilities.assertTextValueVisible(Utilities.java:703)
+	at CommonScreen.EnterPlanScreen.draftSavePlan(EnterPlanScreen.java:118)
+	at TestSuite.EnterPlan.MODULE2_35(EnterPlan.java:209)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_36()'><b>MODULE2_36</b><br>Test class: TestSuite.EnterPlan</td>
+<td><div><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày kết thúc không được trước ngày bắt đầu&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkMultiDate(EnterPlanScreen.java:145)
+	at TestSuite.EnterPlan.MODULE2_36(EnterPlan.java:214)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace369156800", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace369156800'><pre>java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày kết thúc không được trước ngày bắt đầu&apos;)] doesn&apos;t exist
+	at org.testng.Assert.fail(Assert.java:97)
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkMultiDate(EnterPlanScreen.java:145)
+	at TestSuite.EnterPlan.MODULE2_36(EnterPlan.java:214)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestSuite.Login.MODULE1_01()'><b>MODULE1_01</b><br>Test class: TestSuite.Login</td>
+<td></td>
+<td>2</td>
+<td>TestSuite.Login@161479c6</td></tr>
+<tr>
+<td title='TestSuite.Login.MODULE1_02()'><b>MODULE1_02</b><br>Test class: TestSuite.Login</td>
+<td></td>
+<td>0</td>
+<td>TestSuite.Login@161479c6</td></tr>
+<tr>
+<td title='TestSuite.Login.MODULE1_03()'><b>MODULE1_03</b><br>Test class: TestSuite.Login</td>
+<td></td>
+<td>0</td>
+<td>TestSuite.Login@161479c6</td></tr>
+<tr>
+<td title='TestSuite.Login.MODULE1_04()'><b>MODULE1_04</b><br>Test class: TestSuite.Login</td>
+<td></td>
+<td>1</td>
+<td>TestSuite.Login@161479c6</td></tr>
+<tr>
+<td title='TestSuite.Login.MODULE1_05()'><b>MODULE1_05</b><br>Test class: TestSuite.Login</td>
+<td></td>
+<td>1</td>
+<td>TestSuite.Login@161479c6</td></tr>
+<tr>
+<td title='TestSuite.Login.MODULE1_06()'><b>MODULE1_06</b><br>Test class: TestSuite.Login</td>
+<td></td>
+<td>1</td>
+<td>TestSuite.Login@161479c6</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_01()'><b>MODULE2_01</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>8</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_02()'><b>MODULE2_02</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>11</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_03()'><b>MODULE2_03</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>8</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_04()'><b>MODULE2_04</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>18</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_05()'><b>MODULE2_05</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>9</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_06()'><b>MODULE2_06</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>11</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_07()'><b>MODULE2_07</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>11</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_10()'><b>MODULE2_10</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>11</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_12()'><b>MODULE2_12</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>11</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_13()'><b>MODULE2_13</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>12</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_18()'><b>MODULE2_18</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>12</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_19()'><b>MODULE2_19</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>12</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_20()'><b>MODULE2_20</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>8</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_21()'><b>MODULE2_21</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>11</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_22()'><b>MODULE2_22</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>9</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_23()'><b>MODULE2_23</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>15</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_24()'><b>MODULE2_24</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>9</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_25()'><b>MODULE2_25</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>12</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_26()'><b>MODULE2_26</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>11</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_29()'><b>MODULE2_29</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>11</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_31()'><b>MODULE2_31</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>12</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_32()'><b>MODULE2_32</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>12</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_37()'><b>MODULE2_37</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>12</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_38()'><b>MODULE2_38</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>12</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_39()'><b>MODULE2_39</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>2</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.EnterPlan.MODULE2_40()'><b>MODULE2_40</b><br>Test class: TestSuite.EnterPlan</td>
+<td></td>
+<td>2</td>
+<td>TestSuite.EnterPlan@75329a49</td></tr>
+<tr>
+<td title='TestSuite.Logout.MODULE3_01()'><b>MODULE3_01</b><br>Test class: TestSuite.Logout</td>
+<td></td>
+<td>0</td>
+<td>TestSuite.Logout@4313f5bc</td></tr>
+</table><p>
+</body>
+</html>

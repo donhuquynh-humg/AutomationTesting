@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 14 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">47 methods, 14 failed,   33 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_08">MODULE2_08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_09">MODULE2_09</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_11">MODULE2_11</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_14">MODULE2_14</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_15">MODULE2_15</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_16">MODULE2_16</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_17">MODULE2_17</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_27">MODULE2_27</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_28">MODULE2_28</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_30">MODULE2_30</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_33">MODULE2_33</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_34">MODULE2_34</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_35">MODULE2_35</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_36">MODULE2_36</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.Login" class="method navigator-link" hash-for-method="MODULE1_01">MODULE1_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.Login" class="method navigator-link" hash-for-method="MODULE1_02">MODULE1_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.Login" class="method navigator-link" hash-for-method="MODULE1_03">MODULE1_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.Login" class="method navigator-link" hash-for-method="MODULE1_04">MODULE1_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.Login" class="method navigator-link" hash-for-method="MODULE1_05">MODULE1_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.Login" class="method navigator-link" hash-for-method="MODULE1_06">MODULE1_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_01">MODULE2_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_02">MODULE2_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_03">MODULE2_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_04">MODULE2_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_05">MODULE2_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_06">MODULE2_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_07">MODULE2_07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_10">MODULE2_10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_12">MODULE2_12</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_13">MODULE2_13</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_18">MODULE2_18</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_19">MODULE2_19</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_20">MODULE2_20</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_21">MODULE2_21</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_22">MODULE2_22</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_23">MODULE2_23</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_24">MODULE2_24</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_25">MODULE2_25</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_26">MODULE2_26</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_29">MODULE2_29</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_31">MODULE2_31</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_32">MODULE2_32</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_37">MODULE2_37</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_38">MODULE2_38</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_39">MODULE2_39</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.EnterPlan" class="method navigator-link" hash-for-method="MODULE2_40">MODULE2_40</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestSuite.Logout" class="method navigator-link" hash-for-method="MODULE3_01">MODULE3_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestSuite.EnterPlan</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_08">
+                  </a> <!-- MODULE2_08 -->
+                  <span class="method-name">MODULE2_08</span>
+                  <div class="stack-trace">java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép nhỏ hơn giá trị nhỏ nhất&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_08(EnterPlan.java:71)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_09">
+                  </a> <!-- MODULE2_09 -->
+                  <span class="method-name">MODULE2_09</span>
+                  <div class="stack-trace">java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép lớn hơn giá trị lớn nhất&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_09(EnterPlan.java:76)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_11">
+                  </a> <!-- MODULE2_11 -->
+                  <span class="method-name">MODULE2_11</span>
+                  <div class="stack-trace">java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày kết thúc không được trước ngày bắt đầu&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkMultiDate(EnterPlanScreen.java:145)
+	at TestSuite.EnterPlan.MODULE2_11(EnterPlan.java:86)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_14">
+                  </a> <!-- MODULE2_14 -->
+                  <span class="method-name">MODULE2_14</span>
+                  <div class="stack-trace">java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép nhỏ hơn giá trị nhỏ nhất&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_14(EnterPlan.java:101)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_15">
+                  </a> <!-- MODULE2_15 -->
+                  <span class="method-name">MODULE2_15</span>
+                  <div class="stack-trace">java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép lớn hơn giá trị lớn nhất&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_15(EnterPlan.java:106)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_16">
+                  </a> <!-- MODULE2_16 -->
+                  <span class="method-name">MODULE2_16</span>
+                  <div class="stack-trace">java.lang.AssertionError: By.xpath: //div[@class=&apos;Toastify&apos;]//div//div//divis not visible did not expect to find [true] but found [false]
+	at Common.Utilities.assertTextValueVisible(Utilities.java:703)
+	at CommonScreen.EnterPlanScreen.savePlan(EnterPlanScreen.java:111)
+	at TestSuite.EnterPlan.MODULE2_16(EnterPlan.java:111)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_17">
+                  </a> <!-- MODULE2_17 -->
+                  <span class="method-name">MODULE2_17</span>
+                  <div class="stack-trace">java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày kết thúc không được trước ngày bắt đầu&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkMultiDate(EnterPlanScreen.java:145)
+	at TestSuite.EnterPlan.MODULE2_17(EnterPlan.java:116)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_27">
+                  </a> <!-- MODULE2_27 -->
+                  <span class="method-name">MODULE2_27</span>
+                  <div class="stack-trace">java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép nhỏ hơn giá trị nhỏ nhất&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_27(EnterPlan.java:169)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_28">
+                  </a> <!-- MODULE2_28 -->
+                  <span class="method-name">MODULE2_28</span>
+                  <div class="stack-trace">java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép lớn hơn giá trị lớn nhất&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_28(EnterPlan.java:174)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_30">
+                  </a> <!-- MODULE2_30 -->
+                  <span class="method-name">MODULE2_30</span>
+                  <div class="stack-trace">java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày kết thúc không được trước ngày bắt đầu&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkMultiDate(EnterPlanScreen.java:145)
+	at TestSuite.EnterPlan.MODULE2_30(EnterPlan.java:184)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_33">
+                  </a> <!-- MODULE2_33 -->
+                  <span class="method-name">MODULE2_33</span>
+                  <div class="stack-trace">java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép nhỏ hơn giá trị nhỏ nhất&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_33(EnterPlan.java:199)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_34">
+                  </a> <!-- MODULE2_34 -->
+                  <span class="method-name">MODULE2_34</span>
+                  <div class="stack-trace">java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày không được phép lớn hơn giá trị lớn nhất&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkDate(EnterPlanScreen.java:138)
+	at TestSuite.EnterPlan.MODULE2_34(EnterPlan.java:204)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_35">
+                  </a> <!-- MODULE2_35 -->
+                  <span class="method-name">MODULE2_35</span>
+                  <div class="stack-trace">java.lang.AssertionError: By.xpath: //div[@class=&apos;Toastify&apos;]//div//div//divis not visible did not expect to find [true] but found [false]
+	at Common.Utilities.assertTextValueVisible(Utilities.java:703)
+	at CommonScreen.EnterPlanScreen.draftSavePlan(EnterPlanScreen.java:118)
+	at TestSuite.EnterPlan.MODULE2_35(EnterPlan.java:209)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_36">
+                  </a> <!-- MODULE2_36 -->
+                  <span class="method-name">MODULE2_36</span>
+                  <div class="stack-trace">java.lang.AssertionError: Element with locator By.xpath: //p[contains(text(),&apos;Ngày kết thúc không được trước ngày bắt đầu&apos;)] doesn&apos;t exist
+	at Common.Utilities.assertElementVisible(Utilities.java:585)
+	at CommonScreen.EnterPlanScreen.checkMultiDate(EnterPlanScreen.java:145)
+	at TestSuite.EnterPlan.MODULE2_36(EnterPlan.java:214)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestSuite.EnterPlan</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_01">
+                  </a> <!-- MODULE2_01 -->
+                  <span class="method-name">MODULE2_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_02">
+                  </a> <!-- MODULE2_02 -->
+                  <span class="method-name">MODULE2_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_03">
+                  </a> <!-- MODULE2_03 -->
+                  <span class="method-name">MODULE2_03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_04">
+                  </a> <!-- MODULE2_04 -->
+                  <span class="method-name">MODULE2_04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_05">
+                  </a> <!-- MODULE2_05 -->
+                  <span class="method-name">MODULE2_05</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_06">
+                  </a> <!-- MODULE2_06 -->
+                  <span class="method-name">MODULE2_06</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_07">
+                  </a> <!-- MODULE2_07 -->
+                  <span class="method-name">MODULE2_07</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_10">
+                  </a> <!-- MODULE2_10 -->
+                  <span class="method-name">MODULE2_10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_12">
+                  </a> <!-- MODULE2_12 -->
+                  <span class="method-name">MODULE2_12</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_13">
+                  </a> <!-- MODULE2_13 -->
+                  <span class="method-name">MODULE2_13</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_18">
+                  </a> <!-- MODULE2_18 -->
+                  <span class="method-name">MODULE2_18</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_19">
+                  </a> <!-- MODULE2_19 -->
+                  <span class="method-name">MODULE2_19</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_20">
+                  </a> <!-- MODULE2_20 -->
+                  <span class="method-name">MODULE2_20</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_21">
+                  </a> <!-- MODULE2_21 -->
+                  <span class="method-name">MODULE2_21</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_22">
+                  </a> <!-- MODULE2_22 -->
+                  <span class="method-name">MODULE2_22</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_23">
+                  </a> <!-- MODULE2_23 -->
+                  <span class="method-name">MODULE2_23</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_24">
+                  </a> <!-- MODULE2_24 -->
+                  <span class="method-name">MODULE2_24</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_25">
+                  </a> <!-- MODULE2_25 -->
+                  <span class="method-name">MODULE2_25</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_26">
+                  </a> <!-- MODULE2_26 -->
+                  <span class="method-name">MODULE2_26</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_29">
+                  </a> <!-- MODULE2_29 -->
+                  <span class="method-name">MODULE2_29</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_31">
+                  </a> <!-- MODULE2_31 -->
+                  <span class="method-name">MODULE2_31</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_32">
+                  </a> <!-- MODULE2_32 -->
+                  <span class="method-name">MODULE2_32</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_37">
+                  </a> <!-- MODULE2_37 -->
+                  <span class="method-name">MODULE2_37</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_38">
+                  </a> <!-- MODULE2_38 -->
+                  <span class="method-name">MODULE2_38</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_39">
+                  </a> <!-- MODULE2_39 -->
+                  <span class="method-name">MODULE2_39</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE2_40">
+                  </a> <!-- MODULE2_40 -->
+                  <span class="method-name">MODULE2_40</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestSuite.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE1_01">
+                  </a> <!-- MODULE1_01 -->
+                  <span class="method-name">MODULE1_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE1_02">
+                  </a> <!-- MODULE1_02 -->
+                  <span class="method-name">MODULE1_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE1_03">
+                  </a> <!-- MODULE1_03 -->
+                  <span class="method-name">MODULE1_03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE1_04">
+                  </a> <!-- MODULE1_04 -->
+                  <span class="method-name">MODULE1_04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE1_05">
+                  </a> <!-- MODULE1_05 -->
+                  <span class="method-name">MODULE1_05</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE1_06">
+                  </a> <!-- MODULE1_06 -->
+                  <span class="method-name">MODULE1_06</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestSuite.Logout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MODULE3_01">
+                  </a> <!-- MODULE3_01 -->
+                  <span class="method-name">MODULE3_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/anhhn/Downloads/source/TestWebsiteThanhTra/TestScript/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot; group-by-instances=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestSuite.EnterPlan&quot;/&gt;
+      &lt;class name=&quot;TestSuite.Login&quot;/&gt;
+      &lt;class name=&quot;TestSuite.Logout&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test1 (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(47);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'MODULE2_35')
+data.setCell(0, 2, 'TestSuite.EnterPlan')
+data.setCell(0, 3, 20932);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'MODULE2_16')
+data.setCell(1, 2, 'TestSuite.EnterPlan')
+data.setCell(1, 3, 20856);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'MODULE2_04')
+data.setCell(2, 2, 'TestSuite.EnterPlan')
+data.setCell(2, 3, 18385);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'MODULE2_23')
+data.setCell(3, 2, 'TestSuite.EnterPlan')
+data.setCell(3, 3, 15953);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'MODULE2_19')
+data.setCell(4, 2, 'TestSuite.EnterPlan')
+data.setCell(4, 3, 12916);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'MODULE2_38')
+data.setCell(5, 2, 'TestSuite.EnterPlan')
+data.setCell(5, 3, 12817);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'MODULE2_32')
+data.setCell(6, 2, 'TestSuite.EnterPlan')
+data.setCell(6, 3, 12811);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'MODULE2_13')
+data.setCell(7, 2, 'TestSuite.EnterPlan')
+data.setCell(7, 3, 12808);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'MODULE2_18')
+data.setCell(8, 2, 'TestSuite.EnterPlan')
+data.setCell(8, 3, 12496);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'MODULE2_37')
+data.setCell(9, 2, 'TestSuite.EnterPlan')
+data.setCell(9, 3, 12399);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'MODULE2_25')
+data.setCell(10, 2, 'TestSuite.EnterPlan')
+data.setCell(10, 3, 12082);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'MODULE2_31')
+data.setCell(11, 2, 'TestSuite.EnterPlan')
+data.setCell(11, 3, 12067);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'MODULE2_26')
+data.setCell(12, 2, 'TestSuite.EnterPlan')
+data.setCell(12, 3, 11903);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'MODULE2_06')
+data.setCell(13, 2, 'TestSuite.EnterPlan')
+data.setCell(13, 3, 11887);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'MODULE2_07')
+data.setCell(14, 2, 'TestSuite.EnterPlan')
+data.setCell(14, 3, 11762);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'MODULE2_21')
+data.setCell(15, 2, 'TestSuite.EnterPlan')
+data.setCell(15, 3, 11655);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'MODULE2_10')
+data.setCell(16, 2, 'TestSuite.EnterPlan')
+data.setCell(16, 3, 11653);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'MODULE2_02')
+data.setCell(17, 2, 'TestSuite.EnterPlan')
+data.setCell(17, 3, 11643);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'MODULE2_12')
+data.setCell(18, 2, 'TestSuite.EnterPlan')
+data.setCell(18, 3, 11599);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'MODULE2_29')
+data.setCell(19, 2, 'TestSuite.EnterPlan')
+data.setCell(19, 3, 11567);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'MODULE2_22')
+data.setCell(20, 2, 'TestSuite.EnterPlan')
+data.setCell(20, 3, 9440);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'MODULE2_05')
+data.setCell(21, 2, 'TestSuite.EnterPlan')
+data.setCell(21, 3, 9365);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'MODULE2_24')
+data.setCell(22, 2, 'TestSuite.EnterPlan')
+data.setCell(22, 3, 9348);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'MODULE2_03')
+data.setCell(23, 2, 'TestSuite.EnterPlan')
+data.setCell(23, 3, 8924);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'MODULE2_01')
+data.setCell(24, 2, 'TestSuite.EnterPlan')
+data.setCell(24, 3, 8822);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'MODULE2_20')
+data.setCell(25, 2, 'TestSuite.EnterPlan')
+data.setCell(25, 3, 8593);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'MODULE2_39')
+data.setCell(26, 2, 'TestSuite.EnterPlan')
+data.setCell(26, 3, 2263);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'MODULE2_40')
+data.setCell(27, 2, 'TestSuite.EnterPlan')
+data.setCell(27, 3, 2247);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'MODULE1_01')
+data.setCell(28, 2, 'TestSuite.Login')
+data.setCell(28, 3, 2132);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'MODULE1_06')
+data.setCell(29, 2, 'TestSuite.Login')
+data.setCell(29, 3, 1272);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'MODULE1_05')
+data.setCell(30, 2, 'TestSuite.Login')
+data.setCell(30, 3, 1258);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'MODULE2_36')
+data.setCell(31, 2, 'TestSuite.EnterPlan')
+data.setCell(31, 3, 1258);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'MODULE1_04')
+data.setCell(32, 2, 'TestSuite.Login')
+data.setCell(32, 3, 1231);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'MODULE2_11')
+data.setCell(33, 2, 'TestSuite.EnterPlan')
+data.setCell(33, 3, 1196);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'MODULE2_17')
+data.setCell(34, 2, 'TestSuite.EnterPlan')
+data.setCell(34, 3, 1169);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'MODULE2_30')
+data.setCell(35, 2, 'TestSuite.EnterPlan')
+data.setCell(35, 3, 1058);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'MODULE2_09')
+data.setCell(36, 2, 'TestSuite.EnterPlan')
+data.setCell(36, 3, 826);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'MODULE2_14')
+data.setCell(37, 2, 'TestSuite.EnterPlan')
+data.setCell(37, 3, 624);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'MODULE1_03')
+data.setCell(38, 2, 'TestSuite.Login')
+data.setCell(38, 3, 605);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'MODULE2_33')
+data.setCell(39, 2, 'TestSuite.EnterPlan')
+data.setCell(39, 3, 600);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'MODULE1_02')
+data.setCell(40, 2, 'TestSuite.Login')
+data.setCell(40, 3, 589);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'MODULE2_28')
+data.setCell(41, 2, 'TestSuite.EnterPlan')
+data.setCell(41, 3, 573);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'MODULE2_27')
+data.setCell(42, 2, 'TestSuite.EnterPlan')
+data.setCell(42, 3, 572);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'MODULE2_34')
+data.setCell(43, 2, 'TestSuite.EnterPlan')
+data.setCell(43, 3, 568);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'MODULE2_15')
+data.setCell(44, 2, 'TestSuite.EnterPlan')
+data.setCell(44, 3, 552);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'MODULE2_08')
+data.setCell(45, 2, 'TestSuite.EnterPlan')
+data.setCell(45, 3, 521);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'MODULE3_01')
+data.setCell(46, 2, 'TestSuite.Logout')
+data.setCell(46, 3, 503);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestSuite.Login</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestSuite.Logout</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestSuite.EnterPlan</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(Chrome)</span>
+                <span class="method-start">100 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_01() throws java.io.IOException)</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_01</span>
+                <span class="method-start">6563 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_01 status=SUCCESS method=EnterPlan.MODULE2_01()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">15390 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_01 status=SUCCESS method=EnterPlan.MODULE2_01()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">15472 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_02() throws java.io.IOException)</span>
+                <span class="method-start">15473 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_02</span>
+                <span class="method-start">20695 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_02 status=SUCCESS method=EnterPlan.MODULE2_02()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">32345 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_02 status=SUCCESS method=EnterPlan.MODULE2_02()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">32424 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_03() throws java.io.IOException)</span>
+                <span class="method-start">32424 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_03</span>
+                <span class="method-start">38163 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_03 status=SUCCESS method=EnterPlan.MODULE2_03()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">47089 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_03 status=SUCCESS method=EnterPlan.MODULE2_03()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">47166 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_04() throws java.io.IOException)</span>
+                <span class="method-start">47167 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_04</span>
+                <span class="method-start">52551 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_04 status=SUCCESS method=EnterPlan.MODULE2_04()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">70938 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_04 status=SUCCESS method=EnterPlan.MODULE2_04()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">71027 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_05() throws java.io.IOException)</span>
+                <span class="method-start">71028 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_05</span>
+                <span class="method-start">76516 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_05 status=SUCCESS method=EnterPlan.MODULE2_05()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">85883 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_05 status=SUCCESS method=EnterPlan.MODULE2_05()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">85962 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_06() throws java.io.IOException)</span>
+                <span class="method-start">85963 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_06</span>
+                <span class="method-start">91125 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_06 status=SUCCESS method=EnterPlan.MODULE2_06()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">103013 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_06 status=SUCCESS method=EnterPlan.MODULE2_06()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">103098 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_07() throws java.io.IOException)</span>
+                <span class="method-start">103098 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_07</span>
+                <span class="method-start">108393 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_07 status=SUCCESS method=EnterPlan.MODULE2_07()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">120157 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_07 status=SUCCESS method=EnterPlan.MODULE2_07()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">120243 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_08() throws java.io.IOException)</span>
+                <span class="method-start">120243 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MODULE2_08</span>
+                <span class="method-start">125408 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_08 status=FAILURE method=EnterPlan.MODULE2_08()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">125936 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_08 status=FAILURE method=EnterPlan.MODULE2_08()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">126207 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_09() throws java.io.IOException)</span>
+                <span class="method-start">126213 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MODULE2_09</span>
+                <span class="method-start">130625 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_09 status=FAILURE method=EnterPlan.MODULE2_09()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">131453 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_09 status=FAILURE method=EnterPlan.MODULE2_09()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">131720 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_10() throws java.io.IOException)</span>
+                <span class="method-start">131723 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_10</span>
+                <span class="method-start">136925 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_10 status=SUCCESS method=EnterPlan.MODULE2_10()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">148580 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_10 status=SUCCESS method=EnterPlan.MODULE2_10()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">148657 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_11() throws java.io.IOException)</span>
+                <span class="method-start">148658 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MODULE2_11</span>
+                <span class="method-start">153795 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_11 status=FAILURE method=EnterPlan.MODULE2_11()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">154994 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_11 status=FAILURE method=EnterPlan.MODULE2_11()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">155233 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_12() throws java.io.IOException)</span>
+                <span class="method-start">155236 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_12</span>
+                <span class="method-start">160251 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_12 status=SUCCESS method=EnterPlan.MODULE2_12()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">171851 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_12 status=SUCCESS method=EnterPlan.MODULE2_12()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">171927 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_13() throws java.io.IOException)</span>
+                <span class="method-start">171928 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_13</span>
+                <span class="method-start">176976 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_13 status=SUCCESS method=EnterPlan.MODULE2_13()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">189785 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_13 status=SUCCESS method=EnterPlan.MODULE2_13()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">189864 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_14() throws java.io.IOException)</span>
+                <span class="method-start">189865 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MODULE2_14</span>
+                <span class="method-start">194826 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_14 status=FAILURE method=EnterPlan.MODULE2_14()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">195452 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_14 status=FAILURE method=EnterPlan.MODULE2_14()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">195702 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_15() throws java.io.IOException)</span>
+                <span class="method-start">195704 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MODULE2_15</span>
+                <span class="method-start">200860 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_15 status=FAILURE method=EnterPlan.MODULE2_15()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">201414 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_15 status=FAILURE method=EnterPlan.MODULE2_15()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">201657 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_16() throws java.io.IOException)</span>
+                <span class="method-start">201659 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MODULE2_16</span>
+                <span class="method-start">206801 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_16 status=FAILURE method=EnterPlan.MODULE2_16()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">227659 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_16 status=FAILURE method=EnterPlan.MODULE2_16()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">227870 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_17() throws java.io.IOException)</span>
+                <span class="method-start">227872 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MODULE2_17</span>
+                <span class="method-start">232862 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_17 status=FAILURE method=EnterPlan.MODULE2_17()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">234033 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_17 status=FAILURE method=EnterPlan.MODULE2_17()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">234249 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_18() throws java.io.IOException)</span>
+                <span class="method-start">234250 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_18</span>
+                <span class="method-start">239478 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_18 status=SUCCESS method=EnterPlan.MODULE2_18()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">251975 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_18 status=SUCCESS method=EnterPlan.MODULE2_18()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">252054 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_19() throws java.io.IOException)</span>
+                <span class="method-start">252055 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_19</span>
+                <span class="method-start">257033 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_19 status=SUCCESS method=EnterPlan.MODULE2_19()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">269950 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_19 status=SUCCESS method=EnterPlan.MODULE2_19()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">270031 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_20() throws java.io.IOException)</span>
+                <span class="method-start">270032 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_20</span>
+                <span class="method-start">275113 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_20 status=SUCCESS method=EnterPlan.MODULE2_20()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">283707 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_20 status=SUCCESS method=EnterPlan.MODULE2_20()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">283786 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_21() throws java.io.IOException)</span>
+                <span class="method-start">283787 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_21</span>
+                <span class="method-start">288788 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_21 status=SUCCESS method=EnterPlan.MODULE2_21()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">300444 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_21 status=SUCCESS method=EnterPlan.MODULE2_21()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">300535 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_22() throws java.io.IOException)</span>
+                <span class="method-start">300535 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_22</span>
+                <span class="method-start">306339 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_22 status=SUCCESS method=EnterPlan.MODULE2_22()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">315780 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_22 status=SUCCESS method=EnterPlan.MODULE2_22()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">315866 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_23() throws java.io.IOException)</span>
+                <span class="method-start">315866 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_23</span>
+                <span class="method-start">321596 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_23 status=SUCCESS method=EnterPlan.MODULE2_23()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">337550 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_23 status=SUCCESS method=EnterPlan.MODULE2_23()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">337692 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_24() throws java.io.IOException)</span>
+                <span class="method-start">337692 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_24</span>
+                <span class="method-start">343348 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_24 status=SUCCESS method=EnterPlan.MODULE2_24()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">352697 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_24 status=SUCCESS method=EnterPlan.MODULE2_24()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">352775 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_25() throws java.io.IOException)</span>
+                <span class="method-start">352777 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_25</span>
+                <span class="method-start">358078 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_25 status=SUCCESS method=EnterPlan.MODULE2_25()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">370161 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_25 status=SUCCESS method=EnterPlan.MODULE2_25()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">370243 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_26() throws java.io.IOException)</span>
+                <span class="method-start">370244 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_26</span>
+                <span class="method-start">375305 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_26 status=SUCCESS method=EnterPlan.MODULE2_26()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">387209 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_26 status=SUCCESS method=EnterPlan.MODULE2_26()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">387290 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_27() throws java.io.IOException)</span>
+                <span class="method-start">387291 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MODULE2_27</span>
+                <span class="method-start">392349 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_27 status=FAILURE method=EnterPlan.MODULE2_27()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">392922 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_27 status=FAILURE method=EnterPlan.MODULE2_27()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">393152 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_28() throws java.io.IOException)</span>
+                <span class="method-start">393154 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MODULE2_28</span>
+                <span class="method-start">398164 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_28 status=FAILURE method=EnterPlan.MODULE2_28()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">398738 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_28 status=FAILURE method=EnterPlan.MODULE2_28()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">398967 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_29() throws java.io.IOException)</span>
+                <span class="method-start">398969 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_29</span>
+                <span class="method-start">404204 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_29 status=SUCCESS method=EnterPlan.MODULE2_29()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">415772 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_29 status=SUCCESS method=EnterPlan.MODULE2_29()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">415854 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_30() throws java.io.IOException)</span>
+                <span class="method-start">415854 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MODULE2_30</span>
+                <span class="method-start">420832 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_30 status=FAILURE method=EnterPlan.MODULE2_30()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">421898 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_30 status=FAILURE method=EnterPlan.MODULE2_30()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">422133 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_31() throws java.io.IOException)</span>
+                <span class="method-start">422134 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_31</span>
+                <span class="method-start">427197 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_31 status=SUCCESS method=EnterPlan.MODULE2_31()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">439265 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_31 status=SUCCESS method=EnterPlan.MODULE2_31()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">439345 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_32() throws java.io.IOException)</span>
+                <span class="method-start">439346 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_32</span>
+                <span class="method-start">444447 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_32 status=SUCCESS method=EnterPlan.MODULE2_32()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">457259 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_32 status=SUCCESS method=EnterPlan.MODULE2_32()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">457343 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_33() throws java.io.IOException)</span>
+                <span class="method-start">457344 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MODULE2_33</span>
+                <span class="method-start">462384 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_33 status=FAILURE method=EnterPlan.MODULE2_33()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">462986 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_33 status=FAILURE method=EnterPlan.MODULE2_33()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">463233 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_34() throws java.io.IOException)</span>
+                <span class="method-start">463235 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MODULE2_34</span>
+                <span class="method-start">468380 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_34 status=FAILURE method=EnterPlan.MODULE2_34()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">468949 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_34 status=FAILURE method=EnterPlan.MODULE2_34()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">469192 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_35() throws java.io.IOException)</span>
+                <span class="method-start">469194 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MODULE2_35</span>
+                <span class="method-start">474327 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_35 status=FAILURE method=EnterPlan.MODULE2_35()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">495261 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_35 status=FAILURE method=EnterPlan.MODULE2_35()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">495483 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_36() throws java.io.IOException)</span>
+                <span class="method-start">495485 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MODULE2_36</span>
+                <span class="method-start">500667 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_36 status=FAILURE method=EnterPlan.MODULE2_36()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">501927 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_36 status=FAILURE method=EnterPlan.MODULE2_36()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">502188 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_37() throws java.io.IOException)</span>
+                <span class="method-start">502190 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_37</span>
+                <span class="method-start">507228 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_37 status=SUCCESS method=EnterPlan.MODULE2_37()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">519628 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_37 status=SUCCESS method=EnterPlan.MODULE2_37()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">519706 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_38() throws java.io.IOException)</span>
+                <span class="method-start">519706 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_38</span>
+                <span class="method-start">524728 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_38 status=SUCCESS method=EnterPlan.MODULE2_38()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">537546 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_38 status=SUCCESS method=EnterPlan.MODULE2_38()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">537624 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_39() throws java.io.IOException)</span>
+                <span class="method-start">537624 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_39</span>
+                <span class="method-start">542582 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_39 status=SUCCESS method=EnterPlan.MODULE2_39()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">544846 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_39 status=SUCCESS method=EnterPlan.MODULE2_39()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">544920 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.EnterPlan.MODULE2_40() throws java.io.IOException)</span>
+                <span class="method-start">544920 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE2_40</span>
+                <span class="method-start">550186 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE2_40 status=SUCCESS method=EnterPlan.MODULE2_40()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">552434 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE2_40 status=SUCCESS method=EnterPlan.MODULE2_40()[pri:0, instance:TestSuite.E...)</span>
+                <span class="method-start">552508 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestSuite.Login</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(Chrome)</span>
+                <span class="method-start">552512 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.Login.MODULE1_01() throws java.io.IOException)</span>
+                <span class="method-start">552513 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE1_01</span>
+                <span class="method-start">554136 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE1_01 status=SUCCESS method=Login.MODULE1_01()[pri:0, instance:TestSuite.Login...)</span>
+                <span class="method-start">556269 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE1_01 status=SUCCESS method=Login.MODULE1_01()[pri:0, instance:TestSuite.Login...)</span>
+                <span class="method-start">556349 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.Login.MODULE1_02() throws java.io.IOException)</span>
+                <span class="method-start">556350 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE1_02</span>
+                <span class="method-start">558019 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE1_02 status=SUCCESS method=Login.MODULE1_02()[pri:0, instance:TestSuite.Login...)</span>
+                <span class="method-start">558609 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE1_02 status=SUCCESS method=Login.MODULE1_02()[pri:0, instance:TestSuite.Login...)</span>
+                <span class="method-start">558694 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.Login.MODULE1_03() throws java.io.IOException)</span>
+                <span class="method-start">558695 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE1_03</span>
+                <span class="method-start">560292 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE1_03 status=SUCCESS method=Login.MODULE1_03()[pri:0, instance:TestSuite.Login...)</span>
+                <span class="method-start">560897 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE1_03 status=SUCCESS method=Login.MODULE1_03()[pri:0, instance:TestSuite.Login...)</span>
+                <span class="method-start">560970 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.Login.MODULE1_04() throws java.io.IOException)</span>
+                <span class="method-start">560971 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE1_04</span>
+                <span class="method-start">562516 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE1_04 status=SUCCESS method=Login.MODULE1_04()[pri:0, instance:TestSuite.Login...)</span>
+                <span class="method-start">563748 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE1_04 status=SUCCESS method=Login.MODULE1_04()[pri:0, instance:TestSuite.Login...)</span>
+                <span class="method-start">563823 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.Login.MODULE1_05() throws java.io.IOException)</span>
+                <span class="method-start">563824 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE1_05</span>
+                <span class="method-start">565351 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE1_05 status=SUCCESS method=Login.MODULE1_05()[pri:0, instance:TestSuite.Login...)</span>
+                <span class="method-start">566610 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE1_05 status=SUCCESS method=Login.MODULE1_05()[pri:0, instance:TestSuite.Login...)</span>
+                <span class="method-start">566682 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.Login.MODULE1_06() throws java.io.IOException)</span>
+                <span class="method-start">566682 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE1_06</span>
+                <span class="method-start">568251 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE1_06 status=SUCCESS method=Login.MODULE1_06()[pri:0, instance:TestSuite.Login...)</span>
+                <span class="method-start">569523 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE1_06 status=SUCCESS method=Login.MODULE1_06()[pri:0, instance:TestSuite.Login...)</span>
+                <span class="method-start">569598 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestSuite.Logout</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(Chrome)</span>
+                <span class="method-start">569599 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(public void TestSuite.Logout.MODULE3_01() throws java.io.IOException)</span>
+                <span class="method-start">569599 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MODULE3_01</span>
+                <span class="method-start">572944 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=MODULE3_01 status=SUCCESS method=Logout.MODULE3_01()[pri:0, instance:TestSuite.Logo...)</span>
+                <span class="method-start">573448 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MODULE3_01 status=SUCCESS method=Logout.MODULE3_01()[pri:0, instance:TestSuite.Logo...)</span>
+                <span class="method-start">573521 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
